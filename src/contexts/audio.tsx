@@ -19,7 +19,7 @@ type AudioContextValue<K extends string> = [AudioState<K>, AudioFunctions]
 export const generateAudioContext = <K extends string>(audioFiles: { [k in K]: string | AudioOptions }) => {
   const audio = entries(audioFiles).reduce<AudioState<K>['audio']>((acc, [key, entry]) => ({
     ...acc,
-    [key]: new Audio(typeof entry === 'string' ? entry : entry.src)
+    [key]: new Audio(typeof entry === 'string' ? entry : entry.src),
   }), {} as AudioState<K>['audio'])
 
   const initialState: AudioState<K> = { audio }
