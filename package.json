@@ -1,0 +1,23 @@
+{
+  "name": "jam-contente",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {},
+  "bin": {
+    "jam-contente": "./bin/dev.js"
+  },
+  "dependencies": {
+    "ts-pattern": "^5.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@vitejs/plugin-react": "^6.0.2",
+    "cac": "^7.0.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13"
+  },
+  "peerDependencies": {
+    "react": "^19.2.6",
+    "zod": "^4.4.3"
+  }
+}
